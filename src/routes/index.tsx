@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-satellite.jpg";
 import sarImg from "@/assets/sar-reveal.jpg";
 import graphImg from "@/assets/graph-network.jpg";
-import teamLogo from "@/assets/thumba-titans-logo.png.asset.json";
+// ✅ REMOVED: Broken .asset.json metadata import tracking link
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -72,7 +72,7 @@ function Nav() {
 function Logo() {
   return (
     <img
-      src={teamLogo.url}
+      src="/team-logo.png"
       alt="Thumba Titans — ISRO Hackathon Team Logo"
       className="w-9 h-9 rounded-md object-cover border border-border/50 shadow-glow-cyan"
     />
@@ -507,7 +507,7 @@ function Team() {
         <div className="absolute inset-0 bg-hero opacity-50" />
         <div className="relative max-w-3xl mx-auto space-y-6">
           <img
-            src={teamLogo.url}
+            src="/team-logo.png"
             alt="Thumba Titans Team Logo"
             className="w-32 h-32 mx-auto rounded-full object-cover border-2 border-primary/40 shadow-glow-cyan"
           />
