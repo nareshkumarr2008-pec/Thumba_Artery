@@ -12,8 +12,4 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  // Added standard vite configuration block with an empty plugins array to satisfy Wrangler's auto-config requirements
-  vite: {
-    plugins: [], 
-  }
 });
